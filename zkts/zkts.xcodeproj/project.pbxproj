@@ -14,6 +14,8 @@
 		C8B5743A1BD09B79000DF256 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8B574381BD09B79000DF256 /* LaunchScreen.storyboard */; };
 		C8B574451BD09B79000DF256 /* zktsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B574441BD09B79000DF256 /* zktsTests.swift */; };
 		C8B574501BD09B79000DF256 /* zktsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B5744F1BD09B79000DF256 /* zktsUITests.swift */; };
+		C8B5745E1BD0C9DD000DF256 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8B5745D1BD0C9DD000DF256 /* EventKit.framework */; };
+		C8B574601BD0C9EC000DF256 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8B5745F1BD0C9EC000DF256 /* EventKitUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		C8B5744B1BD09B79000DF256 /* zktsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zktsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8B5744F1BD09B79000DF256 /* zktsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zktsUITests.swift; sourceTree = "<group>"; };
 		C8B574511BD09B79000DF256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8B5745D1BD0C9DD000DF256 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		C8B5745F1BD0C9EC000DF256 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8B574601BD0C9EC000DF256 /* EventKitUI.framework in Frameworks */,
+				C8B5745E1BD0C9DD000DF256 /* EventKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +87,8 @@
 				C8B574431BD09B79000DF256 /* zktsTests */,
 				C8B5744E1BD09B79000DF256 /* zktsUITests */,
 				C8B5742D1BD09B79000DF256 /* Products */,
+				C8B5745F1BD0C9EC000DF256 /* EventKitUI.framework */,
+				C8B5745D1BD0C9DD000DF256 /* EventKit.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -400,6 +408,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fms.zkts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -411,6 +420,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fms.zkts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
